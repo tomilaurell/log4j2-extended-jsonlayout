@@ -2,14 +2,14 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.laurell.log4j2</groupId>
     <artifactId>extended-jsonlayout</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.3</version>
     <name>extended-jsonlayout</name>
     <description>A customizable JSONLayout for Log4j2</description>
     <url>https://github.com/tomilaurell/log4j2-extended-jsonlayout</url>
     <scm>
         <url>https://github.com/tomilaurell/log4j2-extended-jsonlayout</url>
         <connection>scm:git:https://github.com/tomilaurell/log4j2-extended-jsonlayout.git</connection>
-        <tag>HEAD</tag>
+        <tag>extended-jsonlayout-1.0.3</tag>
     </scm>
     <issueManagement>
         <url>https://github.com/tomilaurell/log4j2-extended-jsonlayout/issues</url>
