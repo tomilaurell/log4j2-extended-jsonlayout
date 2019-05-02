@@ -1,8 +1,8 @@
 # log4j2-extended-jsonlayout
 Customizable JSONLayout for Log4j2
-
-Fork of https://github.com/savantly-net/log4j2-extended-jsonlayout
-Since the original developer has not maintained the project, I forked it and modified to serve me better.
+- Fork of https://github.com/savantly-net/log4j2-extended-jsonlayout
+- Since the original developer has not maintained the project (does not work with the current version of log4j2), I forked it and modified to serve me better.
+- Additional json fields have access to original log message
 
 ### Include the artifact  
 ```
