@@ -1,17 +1,16 @@
-[![Build Status](https://travis-ci.org/savantly-net/log4j2-extended-jsonlayout.svg?branch=master)](https://travis-ci.org/savantly-net/log4j2-extended-jsonlayout)  
-
-
 # log4j2-extended-jsonlayout
 Customizable JSONLayout for Log4j2
 
+Fork of https://github.com/savantly-net/log4j2-extended-jsonlayout
+Since the original developer has not maintained the project, I forked it and modified to serve me better.
 
 ### Include the artifact  
 ```
-		<dependency>
-			<groupId>org.laurell.log4j2</groupId>
-			<artifactId>extended-jsonlayout</artifactId>
-			<version>1.0.0</version>
-		</dependency>
+<dependency>
+    <groupId>org.laurell.log4j2</groupId>
+    <artifactId>extended-jsonlayout</artifactId>
+    <version>1.0.0</version>
+</dependency>
 ```
 
 ### Example Usage  
@@ -19,11 +18,11 @@ Customizable JSONLayout for Log4j2
 Inside your log4j2 configuration, you can configure the new pattern "ExtendedJsonLayout"
 
 ``` 
-	<Appenders>
-		<Console name="STDOUT" target="SYSTEM_OUT">
-			<ExtendedJsonLayout complete="false" properties="true"/>
-		</Console>
-	</Appenders>
+<Appenders>
+    <Console name="STDOUT" target="SYSTEM_OUT">
+        <ExtendedJsonLayout complete="false" properties="true"/>
+    </Console>
+</Appenders>
 	
 ```  
 
@@ -55,9 +54,9 @@ Implement the [ExtendedJson interface](./src/main/java/org/apache/logging/log4j/
 And configure the class name in your log configuration -  
 
 ``` 
-	<ExtendedJsonLayout complete="false" properties="true" 
-				jsonAdapterClassName="com.example.MyCustomJsonLogger">
-	</ExtendedJsonLayout>
+<ExtendedJsonLayout complete="false" properties="true" 
+            jsonAdapterClassName="com.example.MyCustomJsonLogger">
+</ExtendedJsonLayout>
 ```
 
 
