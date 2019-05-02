@@ -9,7 +9,7 @@ Customizable JSONLayout for Log4j2
 <dependency>
     <groupId>org.laurell.log4j2</groupId>
     <artifactId>extended-jsonlayout</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.3</version>
 </dependency>
 ```
 
