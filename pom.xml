@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.laurell.log4j2</groupId>
     <artifactId>extended-jsonlayout</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT</version>
     <name>extended-jsonlayout</name>
     <description>A customizable JSONLayout for Log4j2</description>
     <url>https://github.com/tomilaurell/log4j2-extended-jsonlayout</url>
@@ -30,6 +30,8 @@
         <developer>
             <name>Tomi Laurell</name>
             <email>tomi.laurell@gmail.com</email>
+            <organization>Tomi Laurell</organization>
+            <organizationUrl>https://github.com/tomilaurell</organizationUrl>
         </developer>
     </developers>
     <licenses>
