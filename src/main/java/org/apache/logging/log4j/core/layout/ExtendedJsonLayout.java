@@ -466,7 +466,7 @@ public class ExtendedJsonLayout extends AbstractJacksonLayout {
     }
 
     private ExtendedJsonWrapper convertLog4jEventToExtendedJsonWrapper(LogEvent event) {
-        ExtendedJsonWrapper wrapper = new ExtendedJsonWrapper(convertMutableToLog4jEvent(event), jsonAdapter.getMixedFields(event.getMessage()));
+        ExtendedJsonWrapper wrapper = new ExtendedJsonWrapper(convertMutableToLog4jEvent(event), jsonAdapter.getMixedFields(event));
         return wrapper;
     }
 

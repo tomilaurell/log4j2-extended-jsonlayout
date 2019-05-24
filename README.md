@@ -9,7 +9,7 @@ Customizable JSONLayout for Log4j2
 <dependency>
     <groupId>org.laurell.log4j2</groupId>
     <artifactId>extended-jsonlayout</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
 </dependency>
 ```
 
@@ -68,7 +68,7 @@ package com.example;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
-
+import org.apache.logging.log4j.core.LogEvent;
 import org.apache.logging.log4j.core.layout.ExtendedJson;
 
 public class MyCustomJsonLogger implements ExtendedJson{
@@ -82,7 +82,7 @@ public class MyCustomJsonLogger implements ExtendedJson{
 	}
 
 	@Override
-	public Map<String, Object> getMixedFields(Message message) {
+	public Map<String, Object> getMixedFields(LogEvent logEvent) {
 		return mixedIn;
 	}
 

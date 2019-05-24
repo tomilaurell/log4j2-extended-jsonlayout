@@ -1,13 +1,13 @@
 package org.apache.logging.log4j.core.layout;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.LogEvent;
+
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.HashMap;
 import java.util.Map;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.message.Message;
 
 public class ExtendedJsonAdapter implements ExtendedJson{
 	
@@ -16,7 +16,7 @@ public class ExtendedJsonAdapter implements ExtendedJson{
 	HashMap<String, Object> mixedFields = new HashMap<String, Object>();
 
 	@Override
-	public Map<String, Object> getMixedFields(Message message) {
+	public Map<String, Object> getMixedFields(LogEvent logEvent) {
 		return mixedFields;
 	}
 	

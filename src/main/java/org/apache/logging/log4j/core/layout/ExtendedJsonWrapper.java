@@ -1,11 +1,10 @@
 package org.apache.logging.log4j.core.layout;
 
-import java.util.HashMap;
-import java.util.Map;
-
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.apache.logging.log4j.core.LogEvent;
 
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import java.util.HashMap;
+import java.util.Map;
 
 @JsonSerialize(using = ExtendedJsonSerializer.class)
 public class ExtendedJsonWrapper {
@@ -14,7 +13,7 @@ public class ExtendedJsonWrapper {
     private final Map<String, Object> mixed;
 
     public ExtendedJsonWrapper(LogEvent origin) {
-        this(origin, new HashMap<String, Object>());
+        this(origin, new HashMap<>());
     }
     
     public ExtendedJsonWrapper(LogEvent origin, Map<String, Object> mixedIn) {
